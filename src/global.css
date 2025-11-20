@@ -51,13 +51,19 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: "Phantom Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.3em;
+    font-size: 20px;
+    line-height: 1.5em;
 }
 
+p {
+  line-height: 1.5em;
+}
+
+
+
 main {
-    max-width: 650px;
-    margin: 5em auto;
+    max-width: 768px;
+    margin: 3em auto;
     padding: 2rem;
 }
 
@@ -94,9 +100,15 @@ h1 {
 ul {
   list-style-type: disc;
   padding-left: 3em;
-  line-height: 1em;
+  line-height: 1.3em;
 }
 
 .nutshell-bubble-overflow-close {
   color: var(--color-text);
+}
+
+img[src*="cachet.dunkirk.sh/emojis"] {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
 }

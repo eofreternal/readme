@@ -1,0 +1,7 @@
+---
+const { name } = Astro.props;
+--- 
+
+<span role="img" aria-label={name}>
+  <img src={`https://cachet.dunkirk.sh/emojis/${name}/r`} alt={name} title={`:${name}:`}/>
+</span>
