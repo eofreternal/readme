@@ -127,4 +127,5 @@ img[src*="cachet.dunkirk.sh/emojis"] {
   height: 1em;
   vertical-align: -0.1em;
   border: none;
+  border-radius: 0px;
 }
