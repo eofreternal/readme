@@ -13,42 +13,33 @@ import heidi from "../assets/images/heidi.png"
 import dinobox from "../assets/images/dinobox.png"
 
 <div class="flex flex-col gap-8">
-    <div class="flex gap-4">
-        <img class="w-md! border-0!" src={largeOrpheus.src}/>
+    <div class="flex flex-col lg:flex-row gap-4">
+        <img class="w-full! max-w-md! border-0!" src={largeOrpheus.src}/>
         <div class="flex flex-col justify-start">
             <h1>Orpheus (Or-fee-us)</h1>
-            <p>
-                Rawr! Who is this nondescript, female dinosuar? It's Orpheus! 
-                
-                Drawn in black and white, Orpheus popped into existance when Zach signed the registration papers for Hack Club. She's been stealing food and going on whacky adventures ever since.
-
-                Read more about Orpheus [here](https://workshops.hackclub.com/orpheus/)!
-            </p>
+            <span class="pb-4">Rawr! Who is this nondescript, female dinosuar? It's Orpheus!</span>
+            <span class="pb-4">Drawn in black and white, Orpheus popped into existance when Zach signed the registration papers for Hack Club. She's been stealing food and going on whacky adventures ever since.</span>
+            <span>Read more about Orpheus [here](https://workshops.hackclub.com/orpheus/)!</span>
         </div>
     </div>
 
-    <div class="flex gap-4">
-        <img class="w-md! border-0!" src={heidi.src}/>
+    <div class="flex flex-col lg:flex-row gap-4">
+        <img class="w-full! max-w-md! border-0!" src={heidi.src}/>
         <div class="flex flex-col justify-start">
             <h1>Heidi (H-eye-di)</h1>
-            <p>
-                A raccoon drinking hot chocolate? Who does that? Heidi does! 
-                Heidi was dreamt up by Chris Walker in 2024. She's silly racoon that likes to go on adventures with her girlfriend, Orpheus.
-            </p>
+            <span class="pb-4">A raccoon drinking hot chocolate? Who does that? Heidi does!</span>
+            <span>Heidi was dreamt up by Chris Walker in 2024. She's silly racoon that likes to go on adventures with her girlfriend, Orpheus.</span>
         </div>
     </div>  
 
-    <div class="flex gap-4">
-        <img class="w-md! border-0!" src={dinobox.src}/>
+    <div class="flex flex-col lg:flex-row gap-4">
+        <img class="w-full! max-w-md! border-0!" src={dinobox.src}/>
         <div class="flex flex-col justify-start">
             <h1>Dinobox (Die-no-box)</h1>
-            <p>
-                A dinosaur with a box on their head sits in the corner, munching on something. Who is it and what are they chewing?
-                Its Dinobox! And they're chewing on mailing labels! Yummy snack :P
-
-                Dinobox is a dinosuar (possibly the same species as Orpheus but nobody knows) of unknown gender. Dinobox handles all the mail for Hack Club. 
-                Don't forget to say "thank you" to Dinobox when you receive your Hack Club stickers.
-            </p>
+            <span>A dinosaur with a box on their head sits in the corner, munching on something. Who is it and what are they chewing?</span>
+            <span class="pb-4">It's Dinobox! And they're chewing on mailing labels! Yummy snack :P</span>
+            <span class="pb-4">Dinobox is a dinosuar (possibly the same species as Orpheus but nobody knows) of unknown gender. Dinobox handles all the mail for Hack Club.</span>
+            <span>Don't forget to say "thank you" to Dinobox when you receive your Hack Club stickers.</span>
         </div>
     </div>  
 </div>
