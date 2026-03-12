@@ -14,6 +14,17 @@ import reply3 from "../assets/images/reply/reply-3.png"
 import reply4 from "../assets/images/reply/reply-4.png"
 
 import gitWindow from "../assets/images/git.png"
+import vscodeGitAdd from "../assets/images/vscode-git-add.png"
+import vscodeGitChange from "../assets/images/vscode-git-change.png"
+import vscodeGitDelete from "../assets/images/vscode-git-delete.png"
+import vscodeGitSeeDeletedLines from "../assets/images/vscode-git-see-deleted-lines.png"
+import vscodeGitSymbol from "../assets/images/vscode-git-symbol.png"
+import vscodeGitStageFile from "../assets/images/vscode-git-stage-file.png"
+import vscodeGitStageAll from "../assets/images/vscode-git-stage-all.png"
+import vscodeGitAddCommitMessage from "../assets/images/vscode-git-add-commit-message.png"
+import vscodeGitPushChanges from "../assets/images/vscode-git-push-changes.png"
+
+import gitlensShowcase from "../assets/images/gitlens-showcase.png"
 
 hi!! this is an internal page that contains the content of the Nutshells that we link to throughout README. feel free to read through them here!
 
@@ -166,24 +177,58 @@ it might look like it's not doing anything for 10 seconds but just wait. It will
 
 <img src={gitWindow.src}/>
 
+Click "sign in with browser". It will open GitHub in your web browser which will either prompt you to login or ask you for permission for Git to perform actions on your behalf. Click "allow."
+
+## : using git
+I'm going to assume you're using VSCode. If you use anything else, you're probably smart enough to figure out Git for yourself by Googling or looking at YouTube videos.
+If you're a beginner, it's best for you to learn common terminal commands and how paths work and become comfortable in the terminal, but I'll show you how to do things though VSCode.
+
+As you make your changes, VSCode will indicate which lines are new
+<img src={vscodeGitAdd.src} />
+
+which lines are changed
+<img src={vscodeGitChange.src} />
+
+and which lines are deleted
+<img src={vscodeGitDelete.src} />
+
+If you click on the red arrow on the left side, a window will popup that will allow you to scroll to see the lines that were deleted.
+<img src={vscodeGitSeeDeletedLines.src} />
+
+To push your changes to GitHub, click on this symbol on the sidebar
+<img src={vscodeGitSymbol.src} />
+
+To actually commit your changes to the repo, hover over the file you want to add and click the plus icon to stage it.
+<img src={vscodeGitStageFile.src} />
+
+You can also stage all the files you made dhanges to by hovering over the word "changes" and clicking the plus button
+<img src={vscodeGitStageAll.src} />
+
+Add a commit message that discribes what you're adding and press "commit"
+<img src={vscodeGitAddCommitMessage.src} />
+
+aaand push your changes up to the repo!
+<img src={vscodeGitPushChanges.src} />
+
+If this is the first time you're committing, VSCode might prompt you to create a public/private repo and choose the name of your repo.
+If you have changes to other files you haven't committed, the "sync" button won't be displayed.
+
+A quality-of-life extention I recommend GitLens. GitLens shows you which lines were changed by who when you select that line.
+<img src={gitlensShowcase.src} />
+
+These are the basics to Git. There are more Git features like branches and partial-commits where you can selectively commit parts of a file instead of the whole file or undoing commits and other features, but you can learn those on your own.
+There are plenty of Git tutorials on YouTube.
+
 ## : ysws-wait-im-a-beginner
+IDE stands for "Integrated Development Environment." It's where developers write their code.
+
 Git and GitHub are used to track code changes (sometimes called "version control"). GitHub is where the code and information about code changes (called commits) are stored. Git is the tool that tracks the code changes and sends the changes to GitHub. They both have "git" in their name but they are different.
 
 Lets get you set up with GitHub and Git
 - [:Make your GitHub account](/readme/nutshells#make-github-account)
 - [:Download git](/readme/nutshells#download-git)
+- [:Set up git](/readme/nutshells#set-up-git)
+- [:Using git](/readme/nutshells#using-git)
 
-- Basic git commands
-git commit -m
-git push
-git pull
-
-git add
-git status
-git stash
-git stash pop
-
-- Committing
-You should commit your code every so often so that your changes are tracked and you can see the evolution of your codebase.
+- Committing: You should commit your code every so often so that your changes are tracked and you can see the evolution of your codebase.
 The standard convention for committing is one commit after every change. For example: if you were fixing typo's in your site, you'd commit after you fixed all the typo's in your website and commit all the changes at once in one commit. You wouldn't commit once after every typo fix. I mean, you could but thats not "standard". There's nothing stopping you if you want to commit after every fixed typo, though.
-
